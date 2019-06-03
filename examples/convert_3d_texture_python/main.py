@@ -93,7 +93,7 @@ if __name__ == "__main__":
     
     joint, concat, hist_NI, hist_RD, hist_CI = construct_histograms(img_3d_NI, img_3d_RD, img_3d_CI, lbp.bins)
     
-    print "Elapsed time: {} [s]".format(time.time()-start)
+    print ("Elapsed time: {} [s]".format(time.time()-start)) #python3
     
     plt.subplot(231)
     plt.plot(hist_NI)
@@ -111,22 +111,3 @@ if __name__ == "__main__":
     plt.plot(concat)
     plt.title("Concat NI+RD+CI")
     plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
